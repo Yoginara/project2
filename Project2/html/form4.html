@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran</title>
+    <link rel="stylesheet" type="text/css" href="../style/form4.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Pembayaran</h2>
+        <p>Kode Booking: <span id="bookingCode"></span></p>
+        <p>Tujuan: <span id="tujuan"></span></p>
+        <p>Metode Pembayaran: <span id="selectedMethod"></span></p>
+        <p>Nomor Rekening: <span id="bankAccount"></span></p>
+        <p>Harga Tiket: <span id="hargaTiket"></span></p>
+        <p>Jumlah Tiket: <span id="jumlahTiket"></span></p>
+        <p>Harga Total: <span id="hargaTotal"></span></p>
+
+        <h2>Upload Bukti Pembayaran</h2>
+        <input type="file" id="buktiPembayaran" accept="image/*" />
+        <button id="uploadButton">Upload</button>
+
+        <button id="bayarButton" class="payment-button">Bayar</button>
+      </div>
+    </div>
+
+    <script src="../javascript/form4.js"></script>
+  </body>
+</html>

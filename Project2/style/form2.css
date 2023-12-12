@@ -1,0 +1,71 @@
+/* Reset default margin and padding */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/Header.jpg'); /* Ganti dengan path/url gambar yang ingin digunakan */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container untuk kartu */
+#ticketCards {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Mengatur kartu ke tengah */
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Style untuk card */
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc; /* Garis tepi dengan warna abu-abu */
+  border-radius: 8px; /* Sudut lengkung untuk sudut kartu */
+  background-color: rgba(91, 91, 91, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+/* Judul kartu */
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0013e3; /* Warna judul */
+}
+
+/* Input dan label */
+.card input[type='text'],
+.card input[type='number'],
+.card input[type='date'] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.card p {
+  margin-bottom: 5px;
+}
+
+/* CSS untuk tombol pembayaran */
+.payment-button {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.payment-button:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}

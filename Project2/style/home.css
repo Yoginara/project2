@@ -1,0 +1,143 @@
+.search-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Atur tinggi di sini */
+}
+
+.view-of-indonesian {
+  color: rgb(19, 255, 78);
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: inline-block;
+}
+
+.search-form input[type='text'] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  margin-right: -5px;
+  width: 300px; /* Atur lebar form pencarian */
+  margin-right: 10px; /* Menambahkan jarak di sebelah kanan form */
+}
+
+/* Gaya tombol pencarian */
+.search-form button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background: linear-gradient(to right, #78ffd6, #a8ff78); /* Gradient horizontal warna hijau */
+  margin-left: 5px; /* Menambahkan jarak di sebelah kiri tombol */
+}
+
+/* Efek hover pada tombol */
+.search-form button:hover {
+  background: linear-gradient(to right, #a8ff78, #78ffd6); /* Perubahan warna saat hover */
+}
+
+/* Penyesuaian tampilan pada layar yang lebih kecil */
+@media screen and (max-width: 768px) {
+  .search-form input[type='text'] {
+    width: 100%;
+  }
+}
+
+/* CSS untuk card */
+/* CSS untuk card */
+.container {
+  max-width: 1300px;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Tambahkan overflow untuk scroll horizontal */
+  -webkit-overflow-scrolling: touch; /* Efek scroll untuk iOS */
+  padding-bottom: 20px; /* Padding bawah untuk jarak dari konten setelahnya */
+}
+
+.card {
+  flex: 0 0 auto; /* Agar ukuran card tidak fleksibel */
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid #000; /* Garis solid dengan ketebalan 1px dan warna hitam (#000) */
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h3 {
+  padding: 10px;
+  margin: 0;
+  font-size: 20px;
+  color: #2f80ed;
+}
+
+.card p {
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.card a {
+  display: block;
+  padding: 10px;
+  color: #2f80ed;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Gaya tombol "Wisata Lainnya" */
+
+.lihat-wisata {
+  text-align: center; /* Untuk menengahkan tombol di tengah */
+  margin-top: 20px; /* Atur jarak dari atas sesuai kebutuhan */
+}
+
+.lihat-wisata-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background: linear-gradient(to right, #78ffd6, #a8ff78); /* Gradient horizontal warna hijau */
+}
+
+/* Efek hover pada tombol "Wisata Lainnya" */
+.lihat-wisata-btn:hover {
+  background: linear-gradient(to right, #a8ff78, #78ffd6); /* Perubahan warna saat hover */
+}

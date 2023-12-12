@@ -1,0 +1,86 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/Header.jpg'); /* Ganti dengan path/url gambar yang ingin digunakan */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  backdrop-filter: blur(50px);
+}
+
+/* Gaya formulir */
+form {
+  width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: rgba(91, 91, 91, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Gaya input form */
+input[type='text'],
+input[type='number'],
+input[type='date'],
+button {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+  margin-top: 5px;
+  background-color: rgb(131, 131, 131);
+  box-shadow: none;
+  outline: none;
+  color: #ffffff;
+}
+
+input[type='text']:focus,
+input[type='number']:focus,
+input[type='date']:focus {
+  outline: none;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date'] {
+  background-image: linear-gradient(to bottom, #ffffff, #fff);
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
